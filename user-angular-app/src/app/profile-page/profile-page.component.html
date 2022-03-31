@@ -1,0 +1,9 @@
+<mat-card class="profile-page">
+    <mat-card-title class="title">Profile</mat-card-title>
+    <mat-card-content *ngIf="profileDetails">
+        <img src={{profileDetails.img}} alt={{profileDetails.name}} />
+        <h2 class="name">{{profileDetails.name}}</h2>
+        <p>{{profileDetails.email}}</p>
+        <p>{{profileDetails.bio}}</p>
+    </mat-card-content>
+</mat-card>

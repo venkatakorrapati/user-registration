@@ -1,0 +1,12 @@
+.registration-card {
+    width: 768px;
+    margin: 0 auto;
+    .title {
+        margin: 16px 0 24px;
+        text-align: center;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+}
