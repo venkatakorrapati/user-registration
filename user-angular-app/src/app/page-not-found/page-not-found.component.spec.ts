@@ -22,4 +22,13 @@ describe('PageNotFoundComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain page not found title and text', () => {
+    const fixture = TestBed.createComponent(PageNotFoundComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.page-not-found-title')?.textContent).toEqual('Ooops');
+    expect(compiled.querySelector('h2')?.textContent).toEqual('404');
+    expect(compiled.querySelector('p')?.textContent).toEqual('Page Not Found.');
+  });
 });
